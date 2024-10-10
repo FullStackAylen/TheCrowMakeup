@@ -1,0 +1,127 @@
+/* Dashboard.css */
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to right, #f5f0f6, #fce9e5); /* Fondo degradado suave */
+    font-family: 'Arial', sans-serif; /* Tipografía más moderna */
+}
+.subtitleAd{
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 10px;
+}
+.sidebar {
+    width: 250px; /* Ancho fijo para la barra lateral */
+    background-color: #ff6f61; /* Color de fondo atractivo */
+    padding: 20px; /* Espaciado interno */
+    display: flex;
+    flex-direction: column; /* Organizar en columna */
+    color: #fff; /* Color del texto blanco */
+    position: relative; /* Para el posicionamiento */
+    justify-content: start; /* Para alinear el logo y el logout */
+}
+.pagination{
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.sidebar-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar elementos */
+}
+
+.logo {
+    height: 120px; /* Altura del logo */
+    max-width: 100%; /* Evitar que se ensanche */
+    object-fit: contain; /* Ajustar el contenido */
+}
+
+.sidebar h1 {
+    font-size: 1.5rem; /* Tamaño de fuente para el título */
+    text-align: center; /* Centrar el texto */
+    margin: 10px 0 0 0; /* Espaciado arriba y abajo */
+}
+
+.navbar {
+    margin-top: 30px; /* Espaciado superior */
+}
+
+.navbar ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin espaciado interno */
+}
+
+.navbar ul li {
+    margin: 15px 0; /* Espaciado entre elementos */
+}
+
+.navbar ul li a {
+    color: #fff; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: 600; /* Texto en semi-negrita */
+    padding: 10px 15px; /* Espaciado alrededor del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.navbar ul li a:hover {
+    background-color: #ffcccb; /* Color de fondo al pasar el ratón */
+    color: #333; /* Color de texto al pasar el ratón */
+}
+
+.logout-icon {
+    height: 40px; /* Altura del icono de logout */
+    cursor: pointer; /* Cambiar cursor al pasar el ratón */
+    margin: 30px 15px; /* Empujar hacia abajo */
+    align-self: flex-start; /* Centrar horizontalmente */
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco */
+    color: #343a40; /* Color del texto */
+    text-align: center; /* Centrar texto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-left: 20px; /* Espaciado a la izquierda para el contenido principal */
+}
+
+.main-content h2 {
+    margin-bottom: 10px; /* Espaciado inferior */
+    font-size: 2rem; /* Tamaño de fuente */
+    color: #ff6f61; /* Color atractivo para los encabezados */
+}
+
+
+.main-content p {
+    font-size: 1.2rem; /* Tamaño de fuente para el párrafo */
+    color: #666; /* Color de texto gris */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Ocupa el 100% en pantallas pequeñas */
+        position: relative; /* Cambiar posicionamiento */
+    }
+
+    .main-content {
+        margin-left: 0; /* Eliminar margen en pantallas pequeñas */
+    }
+
+    .sidebar-header h1 {
+        font-size: 1.5rem; /* Tamaño de fuente más pequeño en móvil */
+    }
+
+    .logo {
+        height: 60px; /* Tamaño del logo en móvil */
+    }
+
+    .logout-icon {
+        height: 30px; /* Tamaño del icono de logout en móvil */
+        margin-top: 20px; /* Ajustar margen superior */
+    }
+}

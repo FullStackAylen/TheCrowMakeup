@@ -1,0 +1,29 @@
+/* src/Styles/Categoria.css */
+.table {
+    margin-top: 20px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+button {
+    margin-right: 10px;
+}
+.title{
+    font-weight: bold;
+}
+.btnAcep {
+    padding: 10px 15px;
+    border: 1px solid #ff6f61;
+    border-radius: 10px;
+    color: #ff6f61;
+    background-color: #fafafa;
+    margin: 5px 10px;
+}
+.btnAcep:hover{
+    border: 1px solid #fafafa;
+    border-radius: 10px;
+    color: #fafafa;
+    background-color: #ff6f61;
+}

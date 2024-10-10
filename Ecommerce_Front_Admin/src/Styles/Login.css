@@ -1,0 +1,182 @@
+/* Estilos generales para pantallas pequeñas (1090px o menos) */
+body {
+    background: linear-gradient(to right, #f5f0f6, #fce9e5);
+    color: #ff6f61; /* Color del texto blanco */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Fuente básica */
+  }
+  
+  .login-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden; /* Evita que aparezca la barra de desplazamiento */
+  }
+  
+  .image-section {
+    display: none; /* Oculta la sección de la imagen en pantallas pequeñas */
+  }
+  
+  .form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #f5f0f6, #fce9e5);
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 20px #ff6f61; /* Sombra más pronunciada */
+  }
+  
+  .logo {
+    width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+    margin-bottom: 10px; /* Espacio entre el logo y el título */
+  }
+  
+  .title {
+    font-size: 2rem; /* Ajusta el tamaño del título */
+    margin: 20px; /* Sin margen para que quede más cerca del subtítulo */
+    color: #ff6f61; /* Color dorado para el título */
+  }
+  
+  .subtitle {
+    font-size: 1rem; 
+    margin: 5px 0 20px 0; 
+    color: #2a2a2a; ; 
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; /* Espacio entre los campos de entrada */
+    border: 1px solid #ff6f61; /* Borde oscuro del campo de entrada */
+    border-radius: 5px; /* Esquinas redondeadas */
+    background-color: #ffffff; /* Fondo oscuro del campo de entrada */
+    color: #ff6f61; /* Color del texto del campo de entrada */
+  }
+  
+  .btnIniciar {
+    padding: 10px;
+    width: 100%; /* Asegura que el botón tenga el mismo ancho que los inputs */
+    background-color: #ff6f61; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px; /* Esquinas redondeadas del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    margin: 20px 40px 20px 40px; /* Espacio entre el botón y los inputs */
+  }
+  
+  button:hover {
+    background-color: #ff6f61; /* Color del botón al pasar el cursor */
+  }
+  
+  .error {
+    color: #ff4444; /* Color rojo para el mensaje de error */
+    margin: 10px 0; /* Espacio entre el mensaje de error y el formulario */
+  }
+  
+  /* Media Queries para pantallas grandes (más de 1090px) */
+  @media (min-width: 1090px) {
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif; /* Fuente básica */
+    }
+  
+    .login-container {
+      display: flex;
+      height: 100vh;
+      overflow: hidden; /* Evita que aparezca la barra de desplazamiento */
+    }
+  
+    .image-section {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; /* Para posicionar la imagen de fondo */
+    }
+  
+    .background-image {
+      width: 100%;
+      height: 100%; /* Asegura que la imagen ocupe todo el espacio */
+      object-fit: cover; /* Asegura que la imagen cubra el área */
+      position: absolute; /* Posiciona la imagen de fondo */
+      top: 0; /* Ajusta la posición */
+      left: 0; /* Ajusta la posición */
+      z-index: 0; /* Coloca la imagen detrás del formulario */
+    }
+  
+    .form-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background: linear-gradient(to right, #f5f0f6, #fce9e5);
+      border-radius: 10px; /* Esquinas redondeadas */
+      box-shadow: 0 4px 20px #ff6f61; /* Sombra más pronunciada */
+      position: relative; /* Para asegurarse de que esté encima de la imagen */
+      z-index: 1; /* Coloca el formulario encima de la imagen */
+    }
+  
+    .logo {
+      width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+      margin-bottom: 10px; /* Espacio entre el logo y el título */
+    }
+  
+    .title {
+      font-size: 2rem; /* Ajusta el tamaño del título */
+      margin: 0; /* Sin margen para que quede más cerca del subtítulo */
+      color: #ff6f61; /* Color dorado para el título */
+    }
+  
+    .subtitle {
+      font-size: 1rem; /* Tamaño del subtítulo */
+      margin: 5px 0 20px 0; /* Espacio reducido entre el subtítulo y el formulario */
+      color: #2a2a2a;  /* Color gris claro para el subtítulo */
+    }
+  
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px ; /* Espacio entre los campos de entrada */
+      border: 1px solid #ff6f61; /* Borde oscuro del campo de entrada */
+      border-radius: 5px; /* Esquinas redondeadas */
+      background-color: #ffffff; /* Fondo oscuro del campo de entrada */
+      color: #ff6f61; /* Color del texto del campo de entrada */
+      
+    }
+  
+    .btnIniciar {
+      padding: 10px;
+      width: 100%; /* Asegura que el botón tenga el mismo ancho que los inputs */
+      background-color: #ff6f61; /* Color de fondo del botón */
+      color: white; /* Color del texto del botón */
+      border: none;
+      border-radius: 5px; /* Esquinas redondeadas del botón */
+      cursor: pointer; /* Cambia el cursor al pasar por encima */
+      margin: 20px 0px 20px 0px; /* Espacio entre el botón y los inputs */
+    }
+  
+    button:hover {
+      background-color: #ff6e61a1; /* Color del botón al pasar el cursor */
+    }
+  
+    .error {
+      color: #ff4444; /* Color rojo para el mensaje de error */
+      margin: 10px 0; /* Espacio entre el mensaje de error y el formulario */
+    }
+  
+    /* Mostrar la sección de la imagen en pantallas grandes */
+    .image-section {
+      display: flex; /* Muestra la sección de la imagen */
+    }
+  
+    .form-section {
+      /* Mantiene el formulario centrado en pantallas grandes */
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
