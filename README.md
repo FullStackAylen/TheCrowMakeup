@@ -45,7 +45,6 @@ TheCrowMakeup/
 
     📦 Optimización para producción
 
-    ## ⚙️ Instalación y ejecución
 
 ### 1. Clonar el repositorio
 ```bash
