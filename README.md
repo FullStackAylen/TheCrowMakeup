@@ -2,8 +2,6 @@
 
 **The Crow Makeup** es una aplicación full stack para la gestión y venta de productos de maquillaje. Pensada para brindar una experiencia intuitiva tanto para el usuario final como para el administrador, esta app combina un **frontend moderno en React** con una **API robusta desarrollada en ASP.NET Core**.
 
-Repositorio: [https://github.com/FullStackAylen/TheCrowMakeup](https://github.com/FullStackAylen/TheCrowMakeup)
-
 ## 🗂 Estructura del proyecto
 
 TheCrowMakeup/
